@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <title> form1</title>
+    </head>
+    <body>
+        <h1> My Regestration Form </h1>
+        <form>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name"><br>
+           
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name"><br>
+           
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email"><br>
+           
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"><br>
+           
+            <label for="pw_confirm">PW Confirm</label>
+            <input type="password" id="pw_confirm" name="password_confirmation"><br>
+           
+            <label for="birth_day">Birthday</label>
+            <input type="date" id="birth_day" name="birthday"><br>        
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            
+            <p>A short description about yourself:</p>
+            <textarea name="description"></textarea><br>
+
+            <label>favorite language</label>
+            <select name="lang">
+                <option value="JavaScript">JavaScript</option>
+                <option value="python">python</option>
+                <option value="c++">c++</option>
+                <option value="decline">other</option>
+            </select><br>    
+            
+            <input type="submit" value="Submit">
+            
+        </form>
+    </body>
+</html>

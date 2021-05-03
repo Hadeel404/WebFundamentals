@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja To Cat</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <link rel="stylesheet" type ="text/css" href="styles.css">
+
+    <script>
+        $(document).ready(function(){
+            $('img').click(function(){
+                $(this).attr('secSrc', $(this).attr('src'));
+				$(this).attr('src', $(this).attr('altSrc'));
+				$(this).attr('altSrc', $(this).attr('secSrc'));
+            });
+
+
+
+
+        });
+    </script>
+
+</head>
+<body>
+  
+    <div class="ninja">
+        <img src="ninja0.png" altSrc="cat0.png" secSrc=""><br>
+        <img src="ninja1.png" altSrc="cat1.png" secSrc=""><br>
+        <img src="ninja2.png" altSrc="cat2.png" secSrc=""><br>
+        <img src="ninja3.png" altSrc="cat3.png" secSrc=""><br>
+        <img src="ninja4.png" altSrc="cat4.png" secSrc="">
+    </div>
+
+
+
+
+
+    
+</body>
+</html>

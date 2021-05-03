@@ -1,0 +1,223 @@
+//One:
+function biggieSize(arr){
+        for(var i=0 ; i<arr.length ; i++){
+            if(arr[i]>0){
+                arr[i]="big";
+            }
+        }
+        return arr;
+    }
+    
+    // To test code : var ar=[2,"GG",7,"yes!",-1];
+    console.log(biggieSize(ar));
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//Two:
+function printLowReturnHigh (arr){
+    var high=arr[0];
+    var low=arr[0];
+        for(var i=0 ; i<arr.length ; i++){
+            if(arr[i]>high){
+                high=arr[i];
+            }
+            if(arr[i]<low){
+                low=arr[i];
+            }
+        }
+        console.log(low);
+        return high;
+    }
+    
+    // To test code :
+    //console.log(printLowReturnHigh(ar));
+    //var ar=[2,16,7,8,-1];
+    printLowReturnHigh(ar);
+//////////////////////////////////////////////////////////////////////////////////////////
+//three:
+function printOneReturnAnother (arr){
+    console.log(arr[arr.length-2]);
+
+    var odd;
+    for(var i=1 ; i<arr.length ; i++){
+            if(arr[i]%2!=0){
+                odd=arr[i];
+                break;
+            }
+        }
+        return odd;
+    }
+    
+    // To test code :
+    // var ar=[2,1,16,7,8,-1];
+    // console.log(printOneReturnAnother(ar));
+    printOneReturnAnother(ar);
+////////////////////////////////////////////////////////////////////////////////////
+//four:
+function doubleVision (arr){
+    var newArr=[];
+    for(var i=0 ; i<arr.length ; i++){
+        newArr.push(arr[i]*2);
+    }
+        return newArr;
+    }
+    
+    // To test code :
+    // var ar=[2,1,16,7,8,-1];
+    // console.log(doubleVision(ar));
+    doubleVision(ar);
+
+//////////////////////////////////////////////////
+// Five :
+function countPositives  (arr){
+    var sum=0;
+    for(var i=0 ; i<arr.length ; i++){
+        if(arr[i]>0){
+            sum++;
+        }
+    }
+    arr[arr.length-1]=sum;
+        return arr;
+    }
+    
+    // To test code :
+    // var ar=[2,1,16,7,8,-1];
+    // console.log(countPositives(ar));
+    countPositives(ar);
+	
+/////////////////////////////////////////////////////////////////////////////////////////////
+//six :
+function evensAndOdds (arr){
+
+    for(var i=0 ; i<arr.length ; i++){
+        if(arr[i]%2!=0 && arr[i+1]%2!=0 && arr[i+2]%2!=0  ){
+            console.log("That's odd!");
+        }
+        if(arr[i]%2==0 && arr[i+1]%2==0 && arr[i+2]%2==0  ){
+            console.log("Even more so!");
+        }
+    }
+    }
+    
+    // To test code :
+    //var ar=[2,1,7,16,8,12];
+    evensAndOdds(ar);
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//Seven :
+function incrementtheSeconds (arr){
+
+    for(var i=0 ; i<arr.length ; i++){
+        if(i%2!=0){
+            arr[i]=arr[i]+1;
+            console.log(arr[i]);
+        }
+    }
+    return(arr);
+}
+    // To test code :
+    //var ar=[5,1,7,16,8,12];
+    incrementtheSeconds(ar);
+//////////////////////////////////////////////////////////////////////////////////////////
+//Eight :
+function previousLengths  (arr){
+    for(var i=arr.length-1 ; i>0 ;i--){
+        arr[i]=arr[i-1].length;
+    }
+    return arr;
+}
+    // To test code :
+    //var ar=["BB","Dojo","Roolo"];
+    console.log(previousLengths(ar));
+///////////////////////////////////////////////////////////////////////////
+//nine:
+function addSeven  (arr){
+    var newArr=[];
+    for(var i=0; i<arr.length  ;i++){
+        newArr[i]=arr[i]+7;
+    }
+    return newArr;
+}
+    // To test code :
+    //var ar=[5,4,9,8];
+    console.log(addSeven(ar));
+////////////////////////////////////////////////////////////////////////////
+//Ten:
+function reverseArray (arr){
+    for (var i = 0; i < arr.length/2; i++){
+         var tempo = arr[i];
+         arr[i] = arr[arr.length-1-i];
+         arr[arr.length-1-i] = tempo;
+    }
+        return arr;
+    }
+    // To test code :
+    // var ar=[5,4,9,8];
+    console.log(reverseArray(ar));
+//////////////////////////////////////////////////////////////////
+//Eleven :
+function outlookNegative(arr){
+    var newA=[];
+    for (var i = 0; i < arr.length; i++){
+        if(arr[i]>0){
+            newA[i]=arr[i]*-1;
+        }
+    }
+        return newA;
+    }
+    // To test code :
+    // var ar=[5,4,9,8];
+    console.log(outlookNegative(ar));
+/////////////////////////////////////////////////////////////////////////////////
+//Twelve:
+function alwaysHungry(arr){
+    var foodCh=true;
+    for (var i = 0; i < arr.length; i++){
+        if(arr[i]=="food"){
+            foodCh=true;
+            console.log("Yummy");
+            }
+    else{
+        foodCh=false;
+    }
+}
+if(foodCh==false){
+    console.log("I'm Hangry");
+}
+}
+
+    // To test code :
+    // var ar=[5,9,"hi"];
+    alwaysHungry(ar);
+///////////////////////////////////////////////////////////////////////////////////
+//Thirteen:
+function swapTowardTheCenter(arr){
+    for (var i = 0; i < arr.length/2; i+=2){
+        var tempo = arr[i];
+        arr[i] = arr[arr.length-1-i];
+        arr[arr.length-1-i] = tempo;
+    }
+    // return arr;
+}
+
+
+    // To test code :
+    // var ar=[5,9,"hi",6,8];
+    // console.log(swapTowardTheCenter(ar));
+    swapTowardTheCenter(ar);
+////////////////////////////////////////////////////////////////////////////
+//Fourteen :
+function scaleTheArray(arr,num){
+    for (var i = 0; i < arr.length; i++){
+        arr[i]=arr[i]*num;
+    }
+    return arr;
+}
+
+
+    // To test code :
+    // var ar=[5,9,9,6,8];
+    // console.log(scaleTheArray(ar,5));
+    
+    var num =//any number ;
+    scaleTheArray(ar,num);
+/////////////////////////////////////////////////////////////////////////////

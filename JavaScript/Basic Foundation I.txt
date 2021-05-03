@@ -1,0 +1,235 @@
+//one :
+function first() {
+    var arr=[];
+
+    for(var i=0; i<255; i++){
+        arr.push(i);
+    }
+    return arr;
+}
+var arr=first();
+console.log(first());
+
+_______________________________________________________________________________________________________________________________________________________________________________________
+//Two:
+// solution with return and a calling statment that prints the sum :
+
+function Even() {
+    var sum=0;
+
+    for(var i=1; i<1000; i++){
+        if(i%2==0){
+            sum+=i;
+        }
+    }
+    return sum;
+}
+console.log(Even());
+
+___________________________________________________________________________________________________________________________________________________________________________________________
+//three :
+
+function odd() {
+    var sum=0;
+
+    for(var i=1; i<5000; i++){
+        if(i%2!=0){
+            sum+=i;
+        }
+    }
+    return sum;
+}
+console.log(odd());
+_______________________________________________________________________________________________________________________________________________________
+//four:
+function Iterate (arr) {
+    var sum=0;
+
+    for(var i=0; i<arr.length; i++){
+        sum+=arr[i];
+        }
+    return sum;
+}
+var arr=[1,2,5];
+x=Iterate (arr);
+
+//to display result : 
+// console.log(x);
+______________________________________________________________________________________________________________________________________________________________
+//five:
+
+function max (arr) {
+    var max=arr[0];
+
+    for(var i=0; i<arr.length; i++){
+        if(arr[i]>max){
+            max=arr[i];
+        }
+    }
+    return max;
+}
+// to test code : var arr=[1,2,5];
+x=max (arr);
+____________________________________________________________________________________________________________________________________________________________________
+//six:
+
+function avg(arr) {
+    var sum=0;
+    for(var i=0; i<arr.length; i++){
+        sum+=arr[i];
+    }
+    max=sum/arr.length;
+    return max;
+}
+// to test code : var arr=[2,2,2];
+x=avg (arr);
+_________________________________________________________________________________________________________________________________________________________
+//seven :
+
+function oddArr() {
+    var arr=[];
+    for(var i=1; i<50; i++){
+        if(i%2!=0){
+            arr.push(i);
+        }
+    }
+    return arr;
+}
+x=oddArr ();
+// To display array elemants: 
+//console.log(x);
+______________________________________________________________________________________________________________________________________________________________________________________________________________________
+//Eight :
+
+function greater(ar) {
+    var num =0;
+    for(var i=0; i<ar.length; i++){
+        if(ar[i]>y){
+            num++;
+        }
+    }
+    return num;
+}
+/* To test code :
+var y=3;
+arr=[1,3,5,7]*/
+x=greater (arr);
+
+/* To display the number of array numbers that are greater than y :
+console.log(x);
+*/
+__________________________________________________________________________________________________________________________________________________________________
+//nine:
+
+
+function mulArr(ar) {
+    var num =0;
+    for(var i=0; i<arr.length; i++){
+        arr[i]=arr[i]*arr[i];
+    }
+    return arr;
+}
+
+/*To test code :
+var arr=[1,3,5,7];*/
+
+x=mulArr(arr);
+
+/*To display the number of array numbers that are greater than y :
+console.log(x);*/
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________
+//Ten
+
+function ReplaceNegative(ar) {
+    for(var i=0; i<ar.length; i++){
+        if(ar[i]<0){
+            ar[i]=0;
+        }
+    }
+    return ar;
+}
+
+/*To test code :
+var arr=[1,5,10,-2];*/
+var x=[];
+x=ReplaceNegative(arr);
+
+/*To display the number of array numbers that are greater than y :
+console.log(x);
+*/
+_____________________________________________________________________________________________________________________________________________________________________________________________________
+//Eleven:
+
+function arrE(ar) {
+    var max=arr[0];
+    var min=arr[0];
+    var sum =0, avg;
+    for(var i=0; i<ar.length; i++){
+        if(ar[i]>max){
+            max=ar[i];
+        }
+        if(arr[i]<min){
+            min=arr[i];
+        }
+        sum+=arr[i];
+    }
+    avg=sum/arr.length;
+    var newArr=[max,min,avg];
+    return newArr;
+}
+
+/*To test code :
+var arr=[1,5,10,-2,11,13];*/
+var x=[];
+x=arrE(arr);
+
+/*To display the number of array numbers that are greater than y :
+console.log(x);*/
+
+__________________________________________________________________________________________________________________________________________________________________________________________________
+//Twelve :
+
+
+function swap(ar) {
+    var temp=ar[0];
+    ar[0]=ar[ar.length-1];
+    ar[ar.length-1]=temp;
+    return ar;
+}
+
+/*To test code :
+var arr=[1,5,10,-2,11,13];*/
+var x=[];
+x=swap(arr);
+
+/*To display the number of array numbers that are greater than y :
+console.log(x);*/
+
+_______________________________________________________________________________________________________________________________________________________
+//thirteen: 
+
+
+function rNeg(ar){
+    for(var i =0 ; i<ar.length; i++){
+        if(ar[i]<0){
+            ar[i]="Dojo";
+        } 
+        }
+        return ar;
+    }
+    
+    /*To test code :
+    var arr=[1,-5,10,-2,11,-13];
+    var x=[];
+    x=rNeg(arr);
+    */
+    
+    /*To display the  result on screen:
+    console.log(x);*/
+    
+
+
+
+
+

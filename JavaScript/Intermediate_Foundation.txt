@@ -1,0 +1,136 @@
+// one:
+
+function sigma(num){
+    var sum =0;
+    for (var i =0; i<=num ; i++){
+        if(num>0){
+            sum+=i;
+        }
+    }
+    return sum ;
+}
+
+console.log(sigma(5));
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//Two:
+
+function Factorial (num){
+    var mul =1;
+    for (var i = 1; i<=num ; i++){
+        if(num>0){
+            mul*=i;
+        }
+    }
+    return mul;
+}
+
+console.log(Factorial (5));
+///////////////////////////////////////////////////////////////////////////////
+//Three:
+
+function fibonacci(index) {
+	var fib = [0, 1];
+	for (var i = 2; i < index + 1; i ++) {
+		fib.push(fib[i - 2] + fib[i - 1]);
+	}
+	return fib[index];
+}
+
+console.log(fibonacci(index));
+/* To test Your code :
+var index =6;*/
+
+////////////////////////////////////////////////////////////////////////////////
+//Four :
+
+function secondToLast(arr){
+    if(arr.length<2){
+        return;
+    }
+    else {
+        return arr[arr.length-2];
+    }
+}
+secondToLast(ar);
+// To Test The Code :
+// var ar=[1,3,5,6];
+// console.log(secondToLast(ar));
+
+////////////////////////////////////////////////////////////////////////////////////////
+//Five:
+function NToLast(arr,y){
+    if(y >arr.length){
+        return;
+    }
+    else {
+        return arr[arr.length-y];
+    }
+}
+secondToLast(ar,u);
+// To Test The Code :
+// var ar=[1,3,5,6];
+// var u=3;
+// console.log(NToLast(ar,2));
+
+////////////////////////////////////////////////////////////////////////////
+//six:
+
+function secondLargest(arr){
+    var max =arr[0];
+    var max2=arr[0];
+    var min =arr[0];
+    var y=0;
+    
+    if(arr.length<1){
+        return;
+    }
+
+    for(var i =0; i<arr.length; i++){
+     if(arr[i]>max) {
+        max=arr[i];
+         y=i; 
+    }
+}
+
+    for(var p =0; p<arr.length; p++){
+      if(arr[p]<min) {
+         min=arr[p];
+      }
+    }
+    
+    for(var x=0 ; x<arr.length ; x++){
+        if(arr[x]==max){
+            arr[x]=min;
+        }
+    }
+
+    for(var i=0 ; i<arr.length ; i++){
+        if(arr[i]>max2) {
+            max2=arr[i]; 
+        }
+    }
+    return max2;
+}
+
+
+// To test code  :  var ar=[1,3,5,6,6];
+console.log( "Second Largest Number is :",secondLargest(ar));
+
+/////////////////////////////////////////////////////////////////////////////
+//Seven :
+function doubleTrouble(arr){
+    var newArr=[];
+        for(var i=0 ; i<arr.length ; i++){
+            newArr.push(arr[i]);
+            newArr.push(arr[i]);
+    
+        }
+        return newArr;
+    }
+    
+ // To test code : var ar=[2,"GG",7,"yes!"];
+  console.log(doubleTrouble(ar));
+  
+///////////////////////////////////////////////////////////////////
+

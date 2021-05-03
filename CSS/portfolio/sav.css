@@ -1,0 +1,141 @@
+/**{
+    margin:0;
+    padding: 0;
+}*/
+.warrpr{
+    margin:0px auto;
+    width:950px;  
+}
+.header{
+    background-color:rgba(250,250,250,255);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    height: 40px;
+    width: 920px;
+}
+h1{
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    bottom: 19px;
+}
+h2{
+    position: relative;
+    bottom: 20px;
+}
+.main{
+    background-image: radial-gradient(circle,rgba(111,89,100,255),rgba(33,16,21,255), rgba(33,16,21,255));
+     width: 950px;
+    }
+.m_top{
+        display: flex;
+        margin-top: 25px;
+       margin-top: 0;   
+    }
+.me_photo{
+    border: 5px solid rgb(236, 222, 222);
+    margin: 10px;
+    padding-top: 1px;
+    width: 400px;
+}
+.about{
+    background-color: rgba(238,231,238,255);
+    margin-right: 10px;
+    min-height: 200px;
+    margin-top: 10px;
+    height: 272px;
+}
+.about h3{
+    background-image: linear-gradient(rgba(159,158,166,255),rgba(136,134,148,255),rgba(159,158,166,255));
+     height: 50px;
+     margin-top: 0px;
+     min-height: 1px;
+    }
+.about p{
+   padding-left: 10px;
+   max-height: 130px;
+   overflow:auto;
+ }
+a {
+     padding-left:10px ;
+     padding-bottom: 20px;
+ }
+ .contR{
+    color:black;
+    position: relative;
+    left: 5px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.bottomSections{
+    padding: 0px;
+    height: 580px;
+    background-image: linear-gradient(to left, rgba(255,255,255,255) , rgba(221,207,220,255));
+    margin: 10px;
+}
+.bottomSections h3{
+    background-image: linear-gradient(rgba(159,158,166,255),rgba(136,134,148,255),rgba(159,158,166,255));
+     margin: 0px;
+    }
+.secImg{
+    width: 296px;
+}
+.bottomSections p{
+    margin-top: 0px;
+    padding:10px 10px 0 10px;
+    min-height: 184px;
+    overflow:auto;
+    margin-bottom: 0px;
+}
+p{
+    max-height: 130px;
+    overflow:auto;
+}
+h3{
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   }
+.Pimg{
+    width: 40px;
+    padding-left: 10px;
+    padding-top: 10px
+}
+.button{
+    background-color: #407d61;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    left: 107px;
+    top: 10px;
+}
+.footer{
+    background-color: rgba(246,246,246,255)ey;
+    margin: 0px;
+    position: relative;
+    bottom: 16px;
+    width:950;
+}
+.jaInfo{
+    position: relative;
+    left: 372px;
+    top: 10px;
+}
+img.jLinkInfo{
+    width: 15px;
+    position: relative;
+    bottom: 7px;
+    left: 306px;
+}
+a{
+    position: relative;
+    bottom: 10px;
+    padding-left: 10px;
+    left: 297px;
+}
+
+

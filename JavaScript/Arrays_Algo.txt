@@ -1,0 +1,19 @@
+// chalange 1 :
+
+var testArr = [6,3,5,1,2,4];
+var sum=0;
+for(var i=0; i<testArr.length; i++){
+    var num=testArr[i];
+    sum+=num;
+    console.log("Num", num,", sum", sum);
+}
+
+////////////////////////////
+
+//chalange 2:
+
+for(var i=0; i<testArr.length; i++){
+    var num=testArr[i];
+    var mul=num*i;
+    console.log(mul);
+}
