@@ -1,2 +1,2 @@
 # WebFundamentals
-Web Fundamentals Assignments
+Web Fundamentals stack Assignments on Coding Dojo platform.
